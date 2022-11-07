@@ -1,0 +1,53 @@
+.search {
+    margin-right: 6rem ;
+    display: flex;
+    position: relative;
+}
+.input {
+    width: 17vw;
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.submit {
+    padding: 5px;
+    margin-left: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #060b26;
+    color: white;
+    border: solid 1px white;
+    transition: 350ms;
+}
+.submit:hover {
+    background-color: white;
+    color: #060b26;
+    transition: 350ms;
+}
+.button {
+    display: flex;
+    height: fit-content;
+    position: absolute;
+    right: 0.5vw;
+    top: 1.3vh;
+    background-color: transparent;
+    border: none;
+    color: grey;
+}
+.button:hover {
+    color: black;
+    font-weight: bold;
+}
+
+@media screen and (max-width:768px) {
+    .search {
+        margin-right: 3rem;
+    }
+    .input {
+        width: 20vw;
+    }
+    .button {
+        top:1.1vh;
+        right: 1.5vw;
+    }
+}

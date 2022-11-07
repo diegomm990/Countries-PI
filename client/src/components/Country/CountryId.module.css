@@ -1,0 +1,14 @@
+.home {
+    top: 0;
+    /* height: 120vh; */
+    background-image: url(../Inicio/mundo.png);
+    /* background-size: 120vw; */
+    background-repeat: repeat;
+    /* opacity: 0.95; */
+    min-height: 200vh;
+}
+.country {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

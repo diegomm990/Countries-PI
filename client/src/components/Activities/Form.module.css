@@ -1,0 +1,177 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 15vh
+}
+
+.block {
+    margin-top: 0.5vh;
+    height: 11vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.blockS {
+    height: 14vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.blockSel {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.selected {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    font-size: 15px;
+    width: 50vw;
+}
+.table {
+    width: 20vw;
+}
+.difficulty {
+    color: white;
+    text-align: center;
+}
+.name {
+    align-self: center;
+    font-size: 1.5vw;
+    height: 5vh;
+    width: 20vw;
+    background-color: #060b26;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 1vw;
+}
+.text {
+    font-size: 1.75vw;
+    color: white;
+    text-align: center;
+}
+.input {
+    align-self: center;
+    padding-left: 1vh;
+    font-size: 1.25vw;
+    height: 5vh;
+    width: 20vw;
+    background-color: #060b26;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    transition: 350ms;
+}
+.input2 {
+    align-self: center;
+    padding-left: 1vh;
+    font-size: 1.25vw;
+    font-weight: bold;
+    height: 5vh;
+    width: 20vw;
+    background-color: #060b26;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    transition: 350ms;
+}
+.input2:hover{
+    background-color: white;
+    color: #060b26;
+    border: 1.5px solid #060b26;
+    transition: 350ms;
+
+}
+.inputBig {
+    height: 100%;
+    align-self: center;
+    padding-left: 1vh;
+    font-size: 1.25vw;
+    width: 20vw;
+    background-color: #060b26;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+.lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1vh;
+    align-self: center;
+    height: 30vh;
+    width: 20vw;
+    background-color: #060b26;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    overflow: auto;
+}
+
+.elementos {
+    border: 1px solid white;
+    width: 15vw;
+    margin-top: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+}
+.pais {
+    text-align: center;
+    font-size: 3vh;
+    font-weight: 400;
+}
+.contBoton {
+    position: relative;
+    display: flex;
+    bottom: 1.2vh;
+    right: 1vw;
+}
+.boton {
+    position: absolute;
+    font-size: 1.5vh;
+    background-color: red;
+    color: white;
+    opacity: 0.7;
+}
+.boton:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .block {
+        width: 70vw;
+    }
+    .text {
+        font-size: 5vw;
+    }
+    .input {
+        width: 55vw;
+        font-size: 3.3vw;
+    }
+    .name {
+        width: 55vw;
+        font-size: 3.3vw;
+    }
+    .lista {
+        width: 55vw;
+    }
+    .input2 {
+        width: 55vw;
+        font-size: 3.3vw;
+    }
+    .elementos{
+        width: 45vw;
+    }
+    .boton {
+        right: 1vw;
+    }
+}

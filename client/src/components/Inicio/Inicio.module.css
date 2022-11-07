@@ -1,0 +1,48 @@
+.inicio {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('./mundo.png');
+    background-size: 100vw;
+    background-repeat: repeat;
+}
+.title {
+    margin-top: 10vh;
+    font-size: 3vw;
+    font-family:  'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+.boton {
+    font-size: 2vw;
+    font-family:  'Arial Narrow Bold', sans-serif;
+    margin-bottom: 10vh;
+    width: 10vw;
+    height: 8vh;
+    border-radius: 12px;
+    color: white;
+    background-color: #060b26;
+    transition: 350ms;
+}
+.boton:hover {
+    color: #060b26;
+    background-color: white;
+    transition: 350ms;
+}
+@media screen and (max-width: 768px) {
+    .inicio {
+        background-image: url(./mundomobil.png);
+        background-repeat: repeat;
+    }
+    .title {
+        width: 70vw;
+        font-size: 6vw;
+        text-align: center;
+    }
+    .boton {
+        width: 23vw;
+        font-size: 5vw;
+    }
+}

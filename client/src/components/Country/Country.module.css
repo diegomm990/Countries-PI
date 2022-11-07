@@ -1,0 +1,35 @@
+.card {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 70vh;
+    width: 40vw;
+    border: 2px solid white;
+    margin: 10vw;
+    border-radius: 10px;
+    background-color: #060b26;
+    color: white;
+}
+.image {
+    height: 10vh;
+    border: 1px solid white;
+}
+.title {
+    font-size: 10vh;
+}
+
+.elements {
+    font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+    .card {
+        margin-top: 15vh;
+        width: 70vw;
+        font-size: 2.5vh;
+    }
+    .elements{
+        font-size: 4vw;
+    }
+}

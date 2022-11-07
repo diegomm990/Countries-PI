@@ -1,0 +1,21 @@
+.home {
+    /* height: 120vh; */
+    background-image: url(../Inicio/mundo.png);
+    /* background-size: 120vw; */
+    background-repeat: repeat;
+    /* opacity: 0.95; */
+    min-height: 200vh;
+}
+.countries {
+    color: white;
+    padding-left: 20vw;
+    padding-top: 16vh;
+}
+@media screen and (max-width: 768px) {
+    .home {
+        background-image: url(../Inicio/mundomobil.png);
+    }
+    .countries {
+        padding-left: 0;
+  }
+}

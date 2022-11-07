@@ -1,0 +1,8 @@
+.home {
+    /* height: 120vh; */
+    background-image: url(../Inicio/mundo.png);
+    /* background-size: 120vw; */
+    background-repeat: repeat;
+    /* opacity: 0.95; */
+    min-height: 200vh;
+}

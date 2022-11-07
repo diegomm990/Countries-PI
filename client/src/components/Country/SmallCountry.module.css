@@ -1,0 +1,53 @@
+.card {
+    font-size: 2.7vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 32.5vh;
+    width: 22vw;
+    border: 2px solid white;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #060b22;
+}
+.image {
+    height: 10vh;
+    border: 1px solid white;
+}
+.title {
+    font-size: 3.8vh;
+    text-align: center;
+}
+.title1 {
+    font-size: 3.8vh;
+    text-align: center;
+}
+.link {
+    text-decoration: none;
+    color: white;
+}
+.link:hover {
+    text-decoration: underline;
+}
+
+.continent {
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .card {
+        width: 30vw;
+        height: 25vh;
+        font-size: 1.5vh;
+        margin: 1vh;
+   }
+   .image {
+    height: 7vh;
+   }
+   .title {
+    font-size: 3vh;
+   }
+   .title1 {
+    font-size: 2vh;
+   }
+}
