@@ -193,7 +193,7 @@ const Form = ()=> {
                   id="season"
                   onChange={setDataHandler}
                 >
-                  <option value="-">Select season...</option>
+                  <option value="-" >Select season...</option>
                   <option value="Autumn">Autumn</option>
                   <option value="Winter">Winter</option>
                   <option value="Spring">Spring</option>
@@ -204,9 +204,9 @@ const Form = ()=> {
               <div className={s.blockSel} >
                 <label className={s.text}>Select Countries</label>
                 <select className={s.input} onChange={(e) => countryHandler(e.target.value) }>
-                  <option value="-">Select country...</option>
+                  <option value="-" >Select country...</option>
                   {list.map((c)=> {
-                    return <option value={Object.values(c)}>{c.name}</option>
+                    return <option value={Object.values(c)} >{c.name}</option>
                   })}
                 </select>
                 <div className={s.lista}>

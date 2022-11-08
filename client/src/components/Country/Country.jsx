@@ -37,7 +37,7 @@ const Country = ()=>{
             <h2>{countryDetail.name}</h2>
             <h2>Capital:{cap}</h2>
             <h2>Continent: {countryDetail.continent}</h2>         
-            <h2>Subregion:{countryDetail.subregion}</h2>
+            <h2 className={s.subregion}>Subregion:{countryDetail.subregion}</h2>
             <h2>Area:{countryDetail.area} Km²</h2>
             <h2>Population:{countryDetail.population}</h2>
             <h2>Activities:</h2>

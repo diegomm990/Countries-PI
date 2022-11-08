@@ -9,6 +9,7 @@ async function getAllCountries(req, res){
           const countryAll = await Country.findAll({ include: Activity});
           res.send(countryAll);
         } else {
+          
           const countryQuery = await Country.findAll({
             where: {
               name: {
@@ -18,19 +19,15 @@ async function getAllCountries(req, res){
             include: Activity
           });
   
-          if (!countryQuery[0]) {
-            console.log("error");
-  
-            return res
-              .status(404)
-              .json({
+          if (!countryQuery[0]) {  
+            return res.status(404).json({
                 error: ` no se encuentra ningun Pais con el nombre , ${name}`,
               });
           }
           return res.send(countryQuery);
         }
       } catch (error) {
-        res.send(error);
+        res.status(404).send(error);
       }
 } 
 

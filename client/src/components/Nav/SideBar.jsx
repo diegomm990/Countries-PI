@@ -48,16 +48,16 @@ const SideBar = ({
             }
         }
     }
-    console.log(countries[0])
     useEffect(() => {
-        if (continent) {
+        if (continent === 'all') {
           getCountries();
-          if (continent !== "all") {
+        }
+        if (continent !== "all") {
+            getCountries()
             setTimeout(() => {
               dispatch(orderCont(continent));
             }, 60);
           }
-        }
       }, [continent]);
 
       useEffect(() => {
@@ -66,7 +66,7 @@ const SideBar = ({
           if (activity !== "All") {
             setTimeout(() => {
               dispatch(orderActiv(activity));
-            }, 40);
+            }, 60);
           }
         }
       }, [activity]);

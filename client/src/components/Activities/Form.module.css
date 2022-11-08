@@ -4,13 +4,14 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 15vh
+    padding-top: 15vh;
+    padding-right: 10vw;
 }
 
 .block {
     margin-top: 0.5vh;
     height: 11vh;
-    width: 50vw;
+    width: 70vw;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -58,6 +59,7 @@
     text-align: center;
 }
 .input {
+    overflow: auto;
     align-self: center;
     padding-left: 1vh;
     font-size: 1.25vw;
@@ -100,6 +102,14 @@
     border: 1px solid white;
     border-radius: 4px;
 }
+.overflow{
+    text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1; /* number of lines to show */
+        -webkit-box-orient: vertical;
+         text-align: left;
+}
 .lista {
     display: flex;
     flex-direction: column;
@@ -140,22 +150,30 @@
     font-size: 1.5vh;
     background-color: red;
     color: white;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 .boton:hover {
     opacity: 1;
 }
 
 @media screen and (max-width: 768px) {
+    .form{
+        padding-right: 0;
+    }
     .block {
         width: 70vw;
+        font-size: 3.3vw;
     }
+    
     .text {
         font-size: 5vw;
     }
     .input {
         width: 55vw;
         font-size: 3.3vw;
+    }
+    option {
+        font-size: 2vw;
     }
     .name {
         width: 55vw;

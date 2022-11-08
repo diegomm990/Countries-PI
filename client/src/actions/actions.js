@@ -13,7 +13,7 @@ import {
 
 export function getCountries() {
     return async (dispatch)=> {
-        const res = await axios.get('http://localhost:3001/countries/');
+        const res = await axios.get('http://192.168.1.35:3001/countries/');
         dispatch({
             type: GET_COUNTRIES, 
             payload: res.data
@@ -23,7 +23,7 @@ export function getCountries() {
 
 export function getDetail(id){
     return async (dispatch)=> {
-        const res = await axios.get(`http://localhost:3001/countries/${id}`);
+        const res = await axios.get(`http://192.168.1.35:3001/countries/${id}`);
         dispatch({
             type: GET_DETAIL,
             payload: res.data
@@ -35,7 +35,7 @@ export function getName(name){
   return async (dispatch) => {
     try {
       const res = await axios.get(
-        `http://localhost:3001/countries?name=${name}`
+        `http://192.168.1.35:3001/countries?name=${name}`
       );
 
       dispatch({ type: GET_NAME, payload: res.data });
@@ -89,7 +89,7 @@ export function orderAlphaRev() {
       try {
         console.log("body de form" + activity.countryID[0]);
         const newAct = await axios.post(
-          "http://localhost:3001/activity",
+          "http://192.168.1.35:3001/activity",
           activity
         );
         console.log(newAct);

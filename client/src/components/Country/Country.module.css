@@ -5,7 +5,7 @@
     justify-content: start;
     align-items: center;
     height: 70vh;
-    width: 40vw;
+    width: 35vw;
     border: 2px solid white;
     margin: 10vw;
     border-radius: 10px;
@@ -21,15 +21,19 @@
 }
 
 .elements {
+    text-align: center;
     font-size: 20px;
 }
 @media screen and (max-width: 768px) {
     .card {
         margin-top: 15vh;
-        width: 70vw;
+        width: 80vw;
         font-size: 2.5vh;
     }
     .elements{
         font-size: 4vw;
+    }
+    .subregion{
+        text-align: center;
     }
 }
