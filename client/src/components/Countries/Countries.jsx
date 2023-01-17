@@ -48,7 +48,7 @@ const Countries = ()=> {
       const reset = () => {
         dispatch(getCountries());
       };
-  
+      console.log(countries)
     return (
       <div>
         <div className={style.botones}>
