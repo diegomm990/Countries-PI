@@ -85,17 +85,19 @@ export function orderAlphaRev() {
 
   export function createActivity(activity, res) {
     console.log("ACTIVITY: ", activity.name);
+    console.log(activity)
     return async function () {
       try {
         console.log("body de form" + activity.countryID[0]);
         const newAct = await axios.post(
-          "localhost:3001/activity",
+          "https://localhost:3001/activity",
           activity
         );
         console.log(newAct);
         return 'Actividad creada'
       } catch (error) {
-        return error.response.data
+        console.log(error)
+        return 'Error'
       }
     };
   }

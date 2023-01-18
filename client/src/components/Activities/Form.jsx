@@ -1,5 +1,5 @@
 import React, {useEffect , useState} from "react";
-import { getName, createActivity } from "../../actions/actions";
+import { getName, createActivity, getCountries } from "../../actions/actions";
 import { useDispatch, useSelector } from "react-redux";
 import s from './Form.module.css'
 import { ordAlpha } from "../../Order/order";
@@ -9,6 +9,11 @@ const Form = ()=> {
     const dispatch = useDispatch();
     const [dif , setDif] = useState('1');
     const [valor, setValor] = useState('Easy')
+
+    useEffect(() => {
+      dispatch(getCountries());
+    }, []);
+    
     const inputHandler = (e)=> {
         setDif(e.target.value)
         cambioDif(e.target.value)
@@ -53,9 +58,7 @@ const Form = ()=> {
         console.log(dataForm)
       };
 
-      useEffect(() => {
-        dispatch(getName(input));
-      }, [input]);
+      
     
       const submitForm = (e) => {
         e.preventDefault();
@@ -78,6 +81,7 @@ const Form = ()=> {
         }
       };
       const countries = useSelector((state)=> state.countries.slice().sort(ordAlpha));
+      console.log(countries);
       const list = [];
       for (let i = 0; i < countries.length; i++) {
         list.push({value: Object.values(countries[i])[1], name: Object.values(countries[i])[1], key: Object.values(countries[i])[0]})
