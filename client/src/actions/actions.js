@@ -35,7 +35,7 @@ export function getName(name){
   return async (dispatch) => {
     try {
       const res = await axios.get(
-        `localhost:3001/countries?name=${name}`
+        `http://localhost:3001/countries?name=${name}`
       );
 
       dispatch({ type: GET_NAME, payload: res.data });
@@ -90,8 +90,7 @@ export function orderAlphaRev() {
       try {
         console.log("body de form" + activity.countryID[0]);
         const newAct = await axios.post(
-          "https://localhost:3001/activity",
-          activity
+          "http://localhost:3001/activity",activity
         );
         console.log(newAct);
         return 'Actividad creada'
